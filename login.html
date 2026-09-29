@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | CampusConnect</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-page">
+<div class="auth-shell">
+  <a class="brand" href="index.html"><span>✦</span> CampusConnect</a>
+  <div class="auth-card">
+    <p class="eyebrow">WELCOME BACK</p><h1>Sign in</h1><p class="muted">Access your events and registrations.</p>
+    <form id="loginForm">
+      <label>Email<input id="email" type="email" required placeholder="you@college.edu"></label>
+      <label>Password<input id="password" type="password" required placeholder="••••••••"></label>
+      <button class="btn full" type="submit">Sign in</button>
+      <p id="message" class="form-message"></p>
+    </form>
+    <p class="switch">Don't have an account? <a href="register.html">Create one</a></p>
+  </div>
+</div>
+<script src="js/api.js"></script><script src="js/auth.js"></script>
+<script>document.getElementById("loginForm").addEventListener("submit", login);</script>
+</body></html>

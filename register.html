@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | CampusConnect</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-page">
+<div class="auth-shell">
+  <a class="brand" href="index.html"><span>✦</span> CampusConnect</a>
+  <div class="auth-card">
+    <p class="eyebrow">JOIN CAMPUSCONNECT</p><h1>Create account</h1><p class="muted">Student accounts can register for events.</p>
+    <form id="registerForm">
+      <label>Full name<input id="name" required placeholder="Your name"></label>
+      <label>College email<input id="email" type="email" required placeholder="you@college.edu"></label>
+      <div class="two-col">
+        <label>Department<input id="department" placeholder="CSE"></label>
+        <label>Year<select id="year"><option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+      </div>
+      <label>Password<input id="password" type="password" minlength="6" required placeholder="Minimum 6 characters"></label>
+      <button class="btn full" type="submit">Create account</button>
+      <p id="message" class="form-message"></p>
+    </form>
+    <p class="switch">Already registered? <a href="login.html">Sign in</a></p>
+  </div>
+</div>
+<script src="js/api.js"></script><script src="js/auth.js"></script>
+<script>document.getElementById("registerForm").addEventListener("submit", register);</script>
+</body></html>

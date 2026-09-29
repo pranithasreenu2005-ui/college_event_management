@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect | College Events</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><span>✦</span> CampusConnect</a>
+  <nav>
+    <a href="events.html">Events</a>
+    <a href="login.html">Login</a>
+    <a class="btn btn-small" href="register.html">Get Started</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">YOUR CAMPUS. YOUR EVENTS.</p>
+      <h1>Discover what's happening <span>on campus.</span></h1>
+      <p class="hero-text">Find workshops, hackathons, cultural fests and seminars. Register in seconds and keep every campus experience in one place.</p>
+      <div class="hero-actions">
+        <a class="btn" href="events.html">Explore Events →</a>
+        <a class="btn btn-ghost" href="register.html">Create Account</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="mini-top"><span>UPCOMING</span><b>● Live</b></div>
+      <h3>CodeFest 2026</h3>
+      <p>24-hour inter-college hackathon</p>
+      <div class="event-meta"><span>📅 15 Oct</span><span>📍 Innovation Lab</span></div>
+      <div class="progress"><i style="width:72%"></i></div>
+      <small>72 of 100 seats filled</small>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div><p class="eyebrow">WHAT'S ON</p><h2>Upcoming events</h2></div>
+      <a href="events.html" class="text-link">View all →</a>
+    </div>
+    <div id="featuredEvents" class="cards"></div>
+  </section>
+</main>
+<script src="js/api.js"></script>
+<script src="js/events.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => loadEvents("featuredEvents", 3));
+</script>
+</body>
+</html>
